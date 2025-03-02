@@ -159,7 +159,7 @@ const Footesection = () => {
             </div>
           </div>
         </div>
-        <div className="row footerContainer_last-">
+        <div className="row footerContainer_last-">   
           <div className="col-md-6 footer-info footer-border-right padding-footerLast_col1 d-xl-block d-none d-lg-block d-md-block">
             <div className="footerWidth">
               <div className="email">
