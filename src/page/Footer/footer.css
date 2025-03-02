@@ -1,0 +1,110 @@
+:root {
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: 20px;
+    --font-xl: 24px;
+}
+
+/* =======Footer======= */
+.footer {
+    background-color: #001a5c;
+    color: #fff;
+    font-size: var(--font-medium);
+  }
+  .footer-border, .footer-border-bottom {
+    border-bottom: 1px solid #00227a;
+  }
+  .footer-border {
+    border-right: 1px solid #00227a;
+  }
+  .footerWidth {
+    max-width: 450px;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .footer .footer-info .logo {
+    line-height: 0;
+    margin-bottom: 0px;
+  }
+  .align-items-center {
+    align-items: center !important;
+  }
+  .footer .footer-info .logo img {
+    margin-right: 6px;
+    max-height: 40px;
+  }
+  
+  .footer .footer-info p, .footer .footer-info p.last {
+    font-family: DMSans-Regular, sans-serif;
+    font-family: var(--font-primary);
+    line-height: 28px;
+  }
+  footer .copyright, footer a, footer p {
+    color: #fff;
+    font-size: var(--font-medium);
+  }
+  .footer .footer-info p.last {
+    padding-bottom: 30px;
+  }
+  #footer:after {
+    background-color: red;
+    content: "";
+    height: 200px;
+    position: relative;
+    width: 50%;
+  }
+  .email {
+    display: flex;
+    font-size: var(--font-medium);
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  .padding-footer {
+    padding: 60px 50px;
+  }
+  .footer h4 {
+    color: #0094ff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .browse {
+    line-height: 27px;
+    list-style-type: none;
+    width: 140px;
+  }
+  a, a:hover {
+    text-decoration: none;
+  }
+  .footer-border-right {
+    border-right: 1px solid #00227a;
+  }
+  .privacypolicy {
+    display: flex;
+    font-size: var(--font-medium);
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 269px;
+    width: 100%;
+  }
+   ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0rem;
+  }
+  .footer-border, .footer-border-bottom {
+    border-bottom: 1px solid #00227a;
+  }
+  .footer-border {
+    border-right: 1px solid #00227a;
+  }
+  .padding-footerLast{
+    padding: 32px 50px;
+  }
+  .logo {
+    height: 6em;
+    padding: 0;
+    will-change: filter;
+    transition: filter 300ms;
+}
