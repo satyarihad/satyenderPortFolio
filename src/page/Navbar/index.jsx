@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router";
 const Navbar =()=>{
     return(
         <>
@@ -12,8 +12,8 @@ const Navbar =()=>{
                         </div>
                         <div className="d-flex">
                             <ul className="menu_bar">
-                                <li>About US</li>
-                                <li>Contact Us</li>
+                                <li><Link to="/about"> About US</Link></li>
+                                <li> <Link to="/contact" >Contact Us</Link></li>
                                 <li>Product</li>
                                 <li>Login</li>
                             </ul>
