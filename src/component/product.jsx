@@ -2,9 +2,13 @@ import React from "react";
 
 const Product =()=>{
     return(
-        <>
-        <h6>This is me! - This is Product page after change</h6>
-        </>
+        <section className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                        <h6>This is me!</h6>
+                    </div>
+                </div>
+        </section>
     )
 }
 export default Product;
