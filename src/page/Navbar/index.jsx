@@ -6,7 +6,6 @@ const Navbar =({ darkMode, setDarkMode })=>{
 
     const [isScrolled, setIsScrolled] = useState(false);
     
-
     useEffect(()=>{
         const handleScroll = ()=>{
             if(window.scrollY > 200){

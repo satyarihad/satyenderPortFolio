@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./getintouch.css";
+import "./getIntouch.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import emailjs from "@emailjs/browser";
@@ -9,7 +9,7 @@ const Getintouch = ()=>{
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        subject: "",
+        subject: "",   
         message: "",
       });
 
