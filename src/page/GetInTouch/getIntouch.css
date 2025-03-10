@@ -1,0 +1,18 @@
+.sendMessage button{
+    width: 100%;
+}
+.sendmsg label{
+    font-weight: 500;
+}
+.getintouch svg{
+    font-size: 20px;
+}
+.getintouch{
+    display: flex;
+}
+.bi-envelope, .bi-telephone, .bi-geo-alt::before {
+font-size: 1.5em;
+}
+.emailpart {
+    line-height: 1;
+}

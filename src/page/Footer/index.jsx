@@ -14,6 +14,8 @@ const Footesection = () => {
     });
   };
 
+  const getfullYear = new Date();
+  const year = getfullYear.getFullYear();
   return (
     <footer id="footer" className="">
       <div className="footer">
@@ -49,7 +51,7 @@ const Footesection = () => {
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
                 >
-                  <p>Browse offering</p>
+                  Browse offering
                 </Link>
               </li>
 
@@ -59,7 +61,7 @@ const Footesection = () => {
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
                 >
-                  <p>How to Start</p>
+                  How to Start
                 </Link>
               </li>
 
@@ -69,7 +71,7 @@ const Footesection = () => {
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
                 >
-                  <p>About us</p>
+                  About us
                 </Link>
               </li>
               <li>
@@ -78,7 +80,7 @@ const Footesection = () => {
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
                 >
-                  <p>Contact us</p>
+                  Contact us
                 </Link>
               </li>
 
@@ -87,7 +89,7 @@ const Footesection = () => {
                   to={"/whitePapers"}
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}>
-                  <p>Whitepapers</p>
+                  Whitepapers
                 </Link>
               </li>
               <li>
@@ -96,7 +98,7 @@ const Footesection = () => {
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
                 >
-                  <p>Blog</p>
+                  Blog
                 </Link>
               </li>
             </ul>
@@ -104,12 +106,12 @@ const Footesection = () => {
           <div className="col-md-3 footer-border-bottom padding-footer">
             <h4>Community</h4>
             <ul className="browse">
-              <li><p>Facebook</p></li>
-              <li><p>Telegram</p></li>
-              <li><p>Pinterest</p></li>
-              <li><p>Instagram</p></li>
-              <li><p>linkedIn</p></li>
-              <li><p>Facebook</p></li>
+              <li>Facebook</li>
+              <li>Telegram</li>
+              <li>Pinterest</li>
+              <li>Instagram</li>
+              <li>linkedIn</li>
+              <li>Facebook</li>
             </ul>
           </div>
         </div>
@@ -170,7 +172,9 @@ const Footesection = () => {
           </div>
           <div className="col-md-6 padding-footerLast">
             <div className="d-flex align-items-baseline justify-content-between">
-            <div className="copyright">© 2024 All Rights Reserved.</div>
+            
+            <div className="copyright">© {year} All Rights Reserved.</div>
+
             <div className="quilesIcon">
                 <a href="https://www.quillaudits.com/leaderboard/al-mabrook-financials-inc" target="_blank"> <img src="./Image/AuditedSticker.svg" alt="" className="img-fluid"/></a>
             </div>

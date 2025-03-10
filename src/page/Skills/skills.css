@@ -1,0 +1,13 @@
+.frontEndTech{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    justify-content: space-around;
+    gap: 10px;
+}
+.frontEndTech div{
+    background-color: azure;
+    padding: 5px 10px;
+    border-radius: 10px;
+    line-height: 20px;
+}
