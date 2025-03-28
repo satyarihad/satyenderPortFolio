@@ -6,10 +6,10 @@ const Projectjs = ()=>{
         <section className="container">
        <div className="row">
            <div className="col-md-12">
-              <hr />
+              
               <div className="about_me_header">
-              <div className="about_me">My Projects</div>
-
+              <div className="about_me">Projects</div>
+              <hr />
               <div className="row mt-3">
                 <div className="col-md-4">
                 

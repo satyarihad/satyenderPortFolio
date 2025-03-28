@@ -11,3 +11,35 @@
     border-radius: 10px;
     line-height: 20px;
 }
+.user_exprience h3{
+    text-transform: uppercase;
+}
+.user_exprience h3 span{
+    font-size: 22px;
+}
+.year_working{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.user_exprience_details{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 400px;
+    overflow-y: auto;
+}
+.compnay_name{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.user_exprience_details ul{
+padding-left: 1.5rem;
+}
+.user_project h5{
+    text-transform: uppercase;
+}
+.project_name h5{
+    text-transform: uppercase;
+}

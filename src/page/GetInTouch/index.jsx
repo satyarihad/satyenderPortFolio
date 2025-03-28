@@ -6,49 +6,56 @@ import emailjs from "@emailjs/browser";
 
 const Getintouch = ()=>{
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        subject: "",   
-        message: "",
-      });
+        const [name, setName] = useState("");
+        const [subject, setSubject] = useState("");
+        const [email, setEmail] = useState("");
+        const [message, setMessage] = useState("");
 
-      const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
-    
-      const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.send(
-            "service_i3jbjzb", // Replace with your EmailJS service ID
-            "template_h38jep1", // Replace with your EmailJS template ID
-            formData,
-            "vfvplH58FBjPuDJtw" // Replace with your EmailJS public key
-          )
-          .then(
-            (response) => {
-              console.log("Email sent successfully!", response);
-              alert("Message sent successfully!");
-              setFormData({ name: "", email: "", subject: "", message: "" }); // Clear the form
-            },
-            (error) => {
-              console.log("Error sending email:", error);
-              alert("Failed to send message. Try again later.");
-            }
-          );
-      };
+        const sendEmail = (e) => {
+            e.preventDefault();
+        
+            const templateParam = {
+                from_name: name,
+                from_email: email,
+                // subject: subject,
+                message: message
+            };
+        
+            const serviceId = "service_x4e3fy7";
+            const templateId = "template_n99f0zi";
+            const publicKey = "vfvplH58FBjPuDJtw";  // Ensure this matches your EmailJS public key
+        
+            emailjs.send(
+                serviceId,      // Service ID
+                templateId,     // Template ID
+                templateParam,  // Template parameters (form data)
+                publicKey       // Public Key (placed correctly)
+            )
+            .then((response) => {
+                console.log("Email sent successfully!", response);
+                alert("Message sent successfully!");
+                setName('');
+                setEmail('');
+                setMessage('');
+                // setSubject('');
+            })
+            .catch((error) => {
+                console.log("Error sending email:", error);
+                alert("Failed to send message. Check your EmailJS credentials.");
+            });
+        };
+
 
     return(
         <section className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="text-center my-5">
+                    <div className="my-5">
                         <h3>Get in Touch</h3>
+                        <hr />
                     </div>
                 </div>
             </div>
-
             <div className="row">
                 <div className="col-md-8">
                     <div className="card">
@@ -66,10 +73,8 @@ const Getintouch = ()=>{
                                     type="text"
                                     className="form-control"
                                     placeholder="Name"
-                                
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
+                                    value={name}
+                                    onChange={(e)=>setName(e.target.value)}
                                     required
 
                                 />
@@ -79,29 +84,24 @@ const Getintouch = ()=>{
                                 <input
                                     type="email"
                                     className="form-control"
-                                    placeholder="Email"                
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
+                                    placeholder="Email"
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
                                     required
-
                                 />
                             </div>
 
-                            <div className="col-md-12 my-4">
+                            {/* <div className="col-md-12 my-4">
                                 <label>Subject</label>
                                 <input
                                 type="text"
                                 className="form-control"
                                 placeholder="Subject"
-                
-                                name="subject"
-                                value={formData.subject}
-                                onChange={handleChange}
+                                value={subject}
+                                onChange={(e)=>setSubject(e.target.value)}
                                 required
-                
                             />
-                            </div>
+                            </div> */}
 
                             <div className="col-md-12">
                                 <label htmlFor="">Message</label>
@@ -111,13 +111,11 @@ const Getintouch = ()=>{
                                     placeholder="Message"
                                     cols="4"
                                     rows="4"
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
+                                    value={message}
+                                    onChange={(e)=>setMessage(e.target.value)}
                                     required
                                     />
                             </div>
-
                             <div className="col-md-12 mt-4 sendMessage">
                                 <button type="btn" className="btn btn-primary"> <i className="bi bi-send"></i> Send Message</button>
                             </div>

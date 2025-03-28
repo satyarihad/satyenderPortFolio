@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import "./about.css"
 
 const Aboutus =()=>{
-    
+    const [reactJS, setReactJS] = useState(85); // Initial value
+    const [nextJS, setNextJS] = useState(80); // Initial value
+    const [expressJS, setExpressJS] = useState(70); // Initial value
+    const [nodeJS, setNodeJS] = useState(69); // Initial value
+    const [js, setJs] = useState(80); // Initial value
+    const [html, setHtml] = useState(95); // Initial value
+    const [css, setCss] = useState(95); // Initial value
+
     return(
         <div className="about_us">
         <section className="container">
@@ -10,26 +17,104 @@ const Aboutus =()=>{
                     <div className="col-md-12">
                        
                        <div className="about_me_header">
-                       <div className="about_me">About Me!</div>
-
+                       <div className="about_me">About Us</div>
+                        <hr />
                        <div className="row">
                         <div className="col-md-6">
+
                             <div className="userPic">
                                 <img src="/images/userPic.png" alt="" className="" />
+                                <div className="mx-3 mt-3 userDetails-skill">
+                                <div>Name: Satyendra Kumar</div>
+                                <div>Jobe Role: UI Design and Development</div>
+                                <div>Expreince: 10 Years exprience</div>
+                                <div>Address: Delhi</div>
                             </div>
+                            </div>
+
+                            <div className="mt-3"><h4>Skills & Technologies</h4></div>
+                            <hr />
+                            <div>
+                            <label>ReactJS: {reactJS}%</label>
+                            <br/>
+                                <meter min="0" max="100" value={reactJS}
+                                    style={{ width: "100%", height: "20px",  }}
+                                ></meter>
+                            </div>
+
+                            <div>
+                            <label>NextJS: {nextJS}%</label>
+                            <br/>
+                                <meter className="meter-fill" min="0" max="100" value={nextJS}
+                                    style={{ width: "100%", height: "20px"  }}
+                                ></meter>
+                            </div>
+
+                            <div>
+                            <label>ExpressJS: {expressJS}%</label>
+                            <br/>
+                                <meter min="0" max="100" value={expressJS}
+                                    style={{ width: "100%", height: "20px",  }}
+                                ></meter>
+                            </div>
+
+                            <div>
+                            <label>NodeJS: {nodeJS}%</label>
+                            <br/>
+                                <meter min="0" max="100" value={nodeJS}
+                                    style={{ width: "100%", height: "20px",  }}
+                                ></meter>
+                            </div>
+
+                            <div>
+                            <label>JavaScript: {js}%</label>
+                            <br/>
+                                <meter min="0" max="100" value={js}
+                                    style={{ width: "100%", height: "20px",  }}
+                                ></meter>
+                            </div>
+
+                            <div>
+                            <label>HTML5: {html}%</label>
+                            <br/>
+                                <meter min="0" max="100" value={html}
+                                    style={{ width: "100%", height: "20px",  }}
+                                ></meter>
+                            </div>
+
+                            <div>
+                            <label>CSS3/Bootsrap/Tailwind: {css}%</label>
+                            <br/>
+                                <meter min="0" max="100" value={css}
+                                    style={{ width: "100%", height: "20px",  }}
+                                ></meter>
+                            </div>
+
+
                         </div>
                         <div className="col-md-6">
-                            <div className="mt-5">
-                            <div className="para-about">I'm a passionate developer with over 7+ years of experience building web applications. I specialize in JavaScript, React, and Node.js, creating responsive and accessible user interfaces.</div>
+                            <div className="mt-0">
+                            <div className="para-about">I'm a passionate developer with over 10 years of experience building web applications and website. I specialize in JavaScript, ReactJS, Nextjs, HTML5, CSS3, Bootstrap, and tailwind creating responsive and accessible user interfaces.</div>
 
-                            <div className="para-about my-3">My journey in tech began when I built my first website at 15. Since then, I've worked with startups and established companies to bring their digital visions to life.</div>
+                            <div className="para-about my-3"></div>
                             
-                            <div className="para-about">When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.</div>
+                            <div className="para-about">When I'm not coding, you can find me, reading sci-fi novels, or experimenting with new recipes in the kitchen.</div>
+
+                            <div className="about_profile mt-5">
+                                <div className="profile"><span className="sub_profile">Profile:</span> UI Developer and Designer</div>
+                                <div className="profile"><span className="sub_profile">Domain:</span> Blockchain, Ecommerce, Tickting</div>
+                                <div className="profile"><span className="sub_profile">Education:</span> Matser of Application</div>
+                                <div className="profile"><span className="sub_profile">Language:</span> English, Hindi</div>
+                                <div className="profile"><span className="sub_profile">Marital Status:</span> Married</div>
+                                <div className="profile"><span className="sub_profile">Other Skills:</span> 
+                                Git, Github, Asana, Jira, Google Analytics & SEO</div>
+                                <div className="profile"><span className="sub_profile"> Interest:</span> Traveling, Travel Photography, Teaching</div>
+                            </div>
                             
                         </div>
                         <div className="projects_exp mt-3">
-                            <div className="expreinces"><span>5+</span> <div>Years Experience</div></div>
-                            <div className="projects mt-2"><span>5+</span> <div>Projects Completed</div></div>
+                            <div className="expreinces"><span>10</span> <div>Years Experience</div></div>
+                            <div className="projects mt-2"><span>10+</span> <div>Projects Completed</div></div>
                         </div>
                         </div>
                        </div>

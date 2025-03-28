@@ -32,9 +32,10 @@ const Navbar =({ darkMode, setDarkMode })=>{
                 <div className="d-flex">
                   <ul className="menu_bar d-flex list-unstyled gap-4 m-0">
                     <li><Link href="/about">About Us</Link></li>
+
+                    <li><Link href="/product">Expreince</Link></li>
+                    <li><Link href="/product">Project</Link></li>
                     <li><Link href="/contact">Contact Us</Link></li>
-                    <li><Link href="/product">Product</Link></li>
-                    <li>Login</li>
                     
                     <li>
                         <div className="form-check form-switch">
