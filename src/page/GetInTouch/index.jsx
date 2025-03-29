@@ -2,49 +2,22 @@ import React, {useState} from "react";
 import "./getIntouch.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import emailjs from "@emailjs/browser";
 
 const Getintouch = ()=>{
 
-        const [name, setName] = useState("");
-        const [subject, setSubject] = useState("");
-        const [email, setEmail] = useState("");
-        const [message, setMessage] = useState("");
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",
+      });
+      const [status, setStatus] = useState("")
 
-        const sendEmail = (e) => {
-            e.preventDefault();
-        
-            const templateParam = {
-                from_name: name,
-                from_email: email,
-                // subject: subject,
-                message: message
-            };
-        
-            const serviceId = "service_x4e3fy7";
-            const templateId = "template_n99f0zi";
-            const publicKey = "vfvplH58FBjPuDJtw";  // Ensure this matches your EmailJS public key
-        
-            emailjs.send(
-                serviceId,      // Service ID
-                templateId,     // Template ID
-                templateParam,  // Template parameters (form data)
-                publicKey       // Public Key (placed correctly)
-            )
-            .then((response) => {
-                console.log("Email sent successfully!", response);
-                alert("Message sent successfully!");
-                setName('');
-                setEmail('');
-                setMessage('');
-                // setSubject('');
-            })
-            .catch((error) => {
-                console.log("Error sending email:", error);
-                alert("Failed to send message. Check your EmailJS credentials.");
-            });
-        };
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
 
+      
+        const isFormValid = formData.name && formData.email && formData.message;
 
     return(
         <section className="container">
@@ -61,67 +34,46 @@ const Getintouch = ()=>{
                     <div className="card">
                         <div className="card-body">
                             
-                            <div>
+                            <div className="mb-3">
                                 <h4>Send Me a Message</h4>
                                 <h6>Fill out the form below and I'll get back to you as soon as possible.</h6>
                             </div>
-                            <form onSubmit={sendEmail}>
-                            <div className="row mt-3 sendmsg">
-                            <div className="col-md-6">
-                                <label htmlFor="">Name</label>
+                            
+                            
+                            <form action="https://formsubmit.co/satyarihand@gmail.com" method="POST">
                                 <input
-                                    type="text"
                                     className="form-control"
-                                    placeholder="Name"
-                                    value={name}
-                                    onChange={(e)=>setName(e.target.value)}
+                                    type="text"
+                                    name="name"
+                                    placeholder="Your Name"
                                     required
-
+                                    onChange={handleChange}
                                 />
-                            </div>
-                            <div className="col-md-6">
-                                <label htmlFor="">Email</label>
                                 <input
+                                    className="form-control my-3"
                                     type="email"
-                                    className="form-control"
-                                    placeholder="Email"
-                                    value={email}
-                                    onChange={(e)=>setEmail(e.target.value)}
+                                    name="email"
+                                    placeholder="Your Email"
                                     required
+                                    onChange={handleChange}
                                 />
-                            </div>
-
-                            {/* <div className="col-md-12 my-4">
-                                <label>Subject</label>
-                                <input
-                                type="text"
-                                className="form-control"
-                                placeholder="Subject"
-                                value={subject}
-                                onChange={(e)=>setSubject(e.target.value)}
-                                required
-                            />
-                            </div> */}
-
-                            <div className="col-md-12">
-                                <label htmlFor="">Message</label>
+                                
                                 <textarea
-                                    type="text"
                                     className="form-control"
-                                    placeholder="Message"
-                                    cols="4"
-                                    rows="4"
-                                    value={message}
-                                    onChange={(e)=>setMessage(e.target.value)}
+                                    name="message"
+                                    placeholder="Your Message"
                                     required
-                                    />
-                            </div>
-                            <div className="col-md-12 mt-4 sendMessage">
-                                <button type="btn" className="btn btn-primary"> <i className="bi bi-send"></i> Send Message</button>
-                            </div>
+                                    onChange={handleChange}
+                                    cols="12"
+                                    rows="4"
+                                ></textarea>
 
-                            </div>
-                            </form>
+                                <div className="d-grid">
+                                <button disabled={!isFormValid} type="submit" className="btn btn-primary wd-100 mt-2">Send <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                    </svg> </button>
+                                </div>
+                                </form>
                         </div>
                     </div>
                 </div>
@@ -139,7 +91,7 @@ const Getintouch = ()=>{
                                 </div>
                                 <div className="mx-2 emailpart">
                                 <h5>Email</h5>
-                                <p>your.email@example.com</p>
+                                <p> <a href="mailto:satyarihand@gmail.com">satyarihand@gmail.com</a></p>
                                 </div>
                             </div>
 

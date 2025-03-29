@@ -24,22 +24,14 @@ const Footesection = () => {
           <div className="col-md-6 footer-info footer-border padding-footer_col1">
             <div className="footerWidth">
               <a href="#" className="logo d-flex align-items-center">
-                <span>
-                  <img src="../images/footerLogo.png" alt="" />
+                <span style={{textTransform:"uppercase", fontSize:"25px"}}>
+                  <span>satyendra kumar</span>
                 </span>
               </a>
               <p className="footer-infoPara">
-                I am a frontend developer with expertise in HTML, CSS, JavaScript, ReactJS, Next.js, jQuery, Figma, and Photoshop. I am working on various projects, including:
+                I am a frontend developer with expertise in HTML, CSS, JavaScript, ReactJS, Next.js, jQuery, Figma, and Photoshop. I am working on various projects.
               </p>
-              <p className="footer-infoPara last">
-                <ul style={{listStyleType:"none"}}>
-                    <li><strong>Next.js development,</strong> including solving server-side errors (like 'window is not defined').</li>
-                    <li><strong>React Google Maps and Leaflet.js,</strong> creating maps with dynamic circles based on data values.</li>
-
-                <li><strong>DataTables</strong> with PDF export functionality.</li>
-                <li><strong>UI/UX design,</strong> possibly using Figma and Photoshop for frontend work.</li>
-                </ul>
-              </p>
+              
             </div>
           </div>
           <div className="col-md-3 footer-border padding-footer">
@@ -47,71 +39,53 @@ const Footesection = () => {
             <ul className="browse">
               <li>
                 <Link
-                  to={"/browseproject"}
-                  onClick={handleClick}
-                  style={{ cursor: "pointer" }}
-                >
-                  Browse offering
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to={"/how_to_invest"}
-                  onClick={handleClick}
-                  style={{ cursor: "pointer" }}
-                >
-                  How to Start
-                </Link>
-              </li>
-
-              <li>
-                <Link
                   to={"/about"}
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
                 >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/contact"}
-                  onClick={handleClick}
-                  style={{ cursor: "pointer" }}
-                >
-                  Contact us
+                  About Us
                 </Link>
               </li>
 
               <li>
                 <Link
-                  to={"/whitePapers"}
+                  to={"/skills"}
                   onClick={handleClick}
-                  style={{ cursor: "pointer" }}>
-                  Whitepapers
+                  style={{ cursor: "pointer" }}
+                >
+                  Exprience
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to={"/skills"}
+                  onClick={handleClick}
+                  style={{ cursor: "pointer" }}
+                >
+                  Project
                 </Link>
               </li>
               <li>
                 <Link
-                  to={"/blog"}
+                  to={"/getintouch"}
                   onClick={handleClick}
                   style={{ cursor: "pointer" }}
-                >
-                  Blog
+                > 
+                  Contact us
                 </Link>
               </li>
+
+              
             </ul>
           </div>
           <div className="col-md-3 footer-border-bottom padding-footer">
             <h4>Community</h4>
             <ul className="browse">
-              <li>Facebook</li>
-              <li>Telegram</li>
-              <li>Pinterest</li>
-              <li>Instagram</li>
-              <li>linkedIn</li>
-              <li>Facebook</li>
+              <li><a target="_blank" href="https://www.facebook.com/">Facebook </a></li>
+              <li><a target='_blank' href='https://www.instagram.com/saty_endra/'>Instagram</a></li>
+              <li><a target='_blank' href='https://www.linkedin.com/in/satyendra-kumar-2009b553/'>LinkedIn</a></li>
+              <li><a target='_blank' href='https://github.com/satyarihad'>Github</a></li>
             </ul>
           </div>
         </div>
@@ -120,7 +94,7 @@ const Footesection = () => {
           <div className="col-md-6 footer-info footer-border-right padding-footer_col1">
             <div className="footerWidth">
               <h4>Contact Us</h4>
-              <p>Do you have any questions? Below you can find our contact. RZ-8, Sweet home, Jain Colony, Part III, Uttam Nagar West, Delhi - 110059
+              <p>Do you have any questions? Please contact. RZ-8, Sweet home, Jain Colony, Part III, Uttam Nagar West, Delhi - 110059.
               </p>
             </div>
 
@@ -139,7 +113,7 @@ const Footesection = () => {
               <Link
                 to={"/privacyPolicy"}
                 onClick={handleClick}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", display:"none" }}
               >
                 <p>Privacy Policy</p>
               </Link>
@@ -147,14 +121,14 @@ const Footesection = () => {
               <Link
                 to={"/termsCondition"}
                 onClick={handleClick}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", display:"none" }}
               >
                 <p>Terms of Use</p>
               </Link>
               <Link
                 to={"/faq"}
                 onClick={handleClick}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", display:"none" }}
               >
                 <p>FAQ</p>
               </Link>

@@ -10,6 +10,8 @@ import Aboutus from './page/AboutUs'
 import Contactus from './page/ContactUs'
 import Homepage from './component/Home';
 import Product from './component/product';
+import Skills from './page/Skills';
+import Getintouch from './page/GetInTouch';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,14 +37,21 @@ function App() {
     <>
     <div className={darkMode ? "dark-mode" : ""}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<Aboutus />} />
-        <Route path="/contact" element={<Contactus />} />
-        <Route path='/product' element={<Product />} />
+        <Route path="/getintouch" element={<Contactus />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path='/getintouch' element={<Getintouch />} />
       </Routes>
       
+      <Aboutus />
+      <Skills />  
+      <Getintouch />
+      
       <Footesection />
+
       </div>
     </>
   )
