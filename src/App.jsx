@@ -46,9 +46,7 @@ function App() {
         <Route path='/getintouch' element={<Getintouch />} />
       </Routes>
       
-      <Aboutus />
-      <Skills />  
-      <Getintouch />
+   
       
       <Footesection />
 

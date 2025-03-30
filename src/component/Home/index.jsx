@@ -57,7 +57,7 @@ const Homepage = ()=>{
                 <div className="col-md-6">
 
                     <div className="" style={{marginTop:"100px"}}>
-                    <div className="head_text">Hi, Im <span className="text-primary">Satyendra Kumar </span>
+                    <div className="head_text">Hi, Im <span className="text-primary" style={{textTransform:"uppercase"}}>S<span style={{fontSize:"23px"}}>atyendra</span> K<span style={{fontSize:"23px"}}>umar</span> </span>
                     <span class="wave">👋</span>
                     </div>
                     

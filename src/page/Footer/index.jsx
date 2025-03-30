@@ -102,7 +102,7 @@ const Footesection = () => {
             <div className="footerWidth">
               <div className="email">
                 <p>E-mail: <a href = "satyarihand@gmail.com">satyarihand@gmail.com</a></p>
-                <p>Mobile: 9650964531 </p>
+                <p>Mobile: +91 9650964531 </p>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ const Footesection = () => {
             <div className="footerWidth">
               <div className="email">
                 <p>E-mail: <a href = "satyarihand@gmail.com">satyarihand@gmail.com</a></p>
-                <p>Mobile: 9650964531</p>
+                <p>Mobile: +91 9650964531</p>
               </div>
             </div>
           </div>

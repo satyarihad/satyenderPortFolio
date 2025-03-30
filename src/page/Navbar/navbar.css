@@ -3,4 +3,86 @@
     width: 100%;
     z-index: 111;
 }
+.mobile_version{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .menu_bar {
+        display: none !important;
+        
+    }
+    .homepage{
+        padding: 0rem .5rem !important;
+    }
+    .projects_exp{
+        flex-flow: column;
+    }
+    .projects_exp::after{
+        width: unset !important;
+    }
+    .mobile_version{
+        display: block;
+        font-size: 2em;
+    }
 
+    .hamburger {
+        font-size: 30px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        background: #FFF;
+        
+        padding: 20px;
+        transition: all 0.3s ease;
+      }
+      
+      .sidebar.open {
+        left: 0;
+      }
+      
+      .sidebar ul {
+    
+        list-style: none;
+        padding: 0;
+        margin-top: 0px;
+        border-top: 1px solid;
+    
+      }
+      
+      .sidebar ul li {
+        padding: 0;
+      }
+      
+      .sidebar ul li a {
+        color: #000;
+        text-decoration: none;
+        font-size: large;
+      }
+      
+      .close-btn {
+        font-size: 24px;
+        border: none;
+        background: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #000;
+      }
+      
+      .userPic{
+        flex-flow: column;
+      }
+  }

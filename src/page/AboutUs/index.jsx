@@ -17,13 +17,13 @@ const Aboutus =()=>{
                     <div className="col-md-12">
                        
                        <div className="about_me_header">
-                       <div className="about_me">About Us</div>
+                       <div className="about_me" style={{textTransform:"uppercase"}}>A<span style={{fontSize:"22px"}}>bout</span> U<span style={{fontSize:"22px"}}>s</span></div>
                         <hr />
                        <div className="row">
                         <div className="col-md-6">
 
                             <div className="userPic">
-                                <img src="/images/userPic.png" alt="" className="" />
+                                <img src="/images/1706411188026.jpg" alt="" className="" />
                                 <div className="mx-3 mt-3 userDetails-skill">
                                 <div>Name: Satyendra Kumar</div>
                                 <div>Jobe Role: UI Design and Development</div>
@@ -32,7 +32,7 @@ const Aboutus =()=>{
                             </div>
                             </div>
 
-                            <div className="mt-3"><h4>Skills & Technologies</h4></div>
+                            <div className="mt-3 skill_technology"><h4>S<span style={{fontSize:"20px"}}>kills</span> & T<span style={{fontSize:"20px"}}>echnologies</span></h4></div>
                             <hr />
                             <div>
                             <label>ReactJS: {reactJS}%</label>

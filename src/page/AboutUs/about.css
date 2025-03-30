@@ -20,10 +20,18 @@
 .about_me_header .about_me{
     font-size: 30px;
     text-align: left;
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
 }
 .about_us{
     /* background: linear-gradient(-80.37deg, #0094ff33 11.06%, #d9d9d900 102.87%, #d9d9d900 0, #fff3 0); */
-   
+}
+.skill_technology{
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
 .userPic img{
     border-radius: 100px;

@@ -23,8 +23,8 @@ const Getintouch = ()=>{
         <section className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div className="my-5">
-                        <h3>Get in Touch</h3>
+                    <div className="my-5 user_exprience">
+                        <h3 style={{textTransform:"uppercase"}}>G<span style={{fontSize:"23px"}}>et</span> i<span style={{fontSize:"23px"}}>n</span> T<span style={{fontSize:"23px"}}>ouch</span></h3>
                         <hr />
                     </div>
                 </div>
