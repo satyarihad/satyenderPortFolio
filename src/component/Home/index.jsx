@@ -63,7 +63,7 @@ const Homepage = ()=>{
                     
                     <div className="head_text my-4"><h3>Experties: {displayText}</h3></div>
 
-                    <div className="head_text_primary mt-0">A passionate UI Designer and developer specializing in creating beautiful, functional, and user-centered digital experiences.</div>
+                    <div className="head_text_primary mt-0">A passionate DevOps Engineer and UI Developer specializing in creating beautiful, functional, and user-centered digital experiences. </div>
 
                     <div className="mt-4">
                         <div className="d-flex ">

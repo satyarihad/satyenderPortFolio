@@ -45,7 +45,6 @@ const Navbar =({ darkMode, setDarkMode })=>{
           };
         }, [isOpen]);
 
-        
     return(
        <div className={` ${darkMode ? 'dark-navbar' : ''} nav_bar-header ${isScrolled ? "fixed top-0 w-full shadow-lg bg-white z-50" : "relative"}`}>
         <section className="container py-2">
